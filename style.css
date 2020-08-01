@@ -7,7 +7,8 @@ font-family: 'Ubuntu Condensed', sans-serif;
     padding: 0;
     list-style: none;
     text-decoration: none;
-     overflow:hidden;
+    overflow: hidden;
+
 }
 .sidebar{
     position: fixed;
