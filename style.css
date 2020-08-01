@@ -15,6 +15,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
     height: 100%;
     background: #042331;
     transition: all .5s ease;
+    overflow:hidden;
 }
 .sidebar header{
     font-size: 22px;
