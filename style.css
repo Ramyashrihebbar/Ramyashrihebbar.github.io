@@ -116,12 +116,15 @@ section{
     text-indent: 10px;
     left:50%;
 }
+.name{
+    text-indent: 10px;
+    margin-left: -10px;
+}
 
 .main{
     color: white;
     text-align: justify;
-    text-indent: 10px;
-    margin-left: -40px;
+    
     top: 100%;
     left: 80%;
     transform: translate(45%,30%);
