@@ -118,7 +118,8 @@ section{
 }
 .para{
     color: white;
-    margin-left: -40px;
+    /*margin-left: -40px;*/
+    margin-right: 100px;
     position: relative;
 }
 .btn {
