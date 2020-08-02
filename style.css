@@ -126,6 +126,7 @@ section{
     margin-left: -10px;
     color: white;
     top: 100%;
+    left:80%;
     
     transform: translate(45%,30%);
 }
