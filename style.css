@@ -112,9 +112,8 @@ section{
 }
 .para{
     color: white;
-    text-align: justify;
+    margin-right: 10px;
     text-indent: 10px;
-    margin-left: -40px;
 }
 
 .main{
