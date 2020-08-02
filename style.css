@@ -114,7 +114,8 @@ section{
     color: white;
     margin-left: -10px;
     text-align: justify;
-    
+    top: 100%;
+    left: 60%;
     
     transform: translate(45%,30%);
     
@@ -125,7 +126,8 @@ section{
     text-indent: 10px;
     margin-left: -10px;
     color: white;
-    
+    top: 100%;
+    left: 60%;
     
     transform: translate(45%,30%);
 }
