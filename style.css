@@ -119,6 +119,7 @@ section{
 .para{
     color: white;
     margin-left: -40px;
+    position: relative;
 }
 .btn {
     border: 2px solid black;
