@@ -110,28 +110,11 @@ section{
     border-radius: 50%;
     background: transparent;
 }
-.para{
+.main{
     color: white;
-    margin-left: -10px;
-    text-align: justify;
-    top: 100%;
-    left: 60%;
-    
-    transform: translate(45%,30%);
-    
-   
+    text-align: center;
+    margin-bottom: -50px;
 }
-.name{
-    text-align: justify;
-    text-indent: 10px;
-    margin-left: -10px;
-    color: white;
-    top: 100%;
-    left: 60%;
-    
-    transform: translate(45%,30%);
-}
-
 
 .btn {
     border: 2px solid black;
