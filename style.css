@@ -117,6 +117,9 @@ section{
     text-align: justify;
     text-indent: 10px;
     margin-left: -10px;
+    top: 100%;
+    left: 60%;
+    transform: translate(45%,30%);
 }
 .btn {
     border: 2px solid black;
