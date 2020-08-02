@@ -1,5 +1,29 @@
-img {
-    max-width:100%;
-    height:auto;
-    object-fit: contain; 
+body{
+    background: url(https://www.fg-a.com/wallpapers/2020-black-crystalline-peaks-image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition:  all .5s;
+    overflow: hidden;
+}
+.rounded{
+    left: 0;
+    height: 100vh;
+    width:50%;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.rounded img{
+    border-radius: 25px;
+}
+.text{
+    color: white;
+    height: 100vh;
+    width:50%;
+    float: left;
+
+}
+.container
+{
+  display: flex;
 }
