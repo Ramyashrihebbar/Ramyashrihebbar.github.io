@@ -113,8 +113,8 @@ section{
 .para{
     color: white;
     margin-right: -10px;
-    text-indent: 10px;
-    left:50%;
+    text-indent: 30px;
+   
 }
 .name{
     text-indent: 10px;
@@ -126,7 +126,7 @@ section{
     text-align: justify;
     
     top: 100%;
-    left: 80%;
+    
     transform: translate(45%,30%);
 }
 .btn {
