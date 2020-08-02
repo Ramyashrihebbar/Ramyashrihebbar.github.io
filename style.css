@@ -110,18 +110,13 @@ section{
     border-radius: 50%;
     background: transparent;
 }
-.name{
+
+
+.main{
     color: white;
     text-align: justify;
     text-indent: 10px;
     margin-left: -10px;
-}
-.para{
-    color: white;
-   
-    position: relative;
-    z-index: 10px;
-
 }
 .btn {
     border: 2px solid black;
