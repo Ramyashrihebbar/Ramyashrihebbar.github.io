@@ -110,7 +110,12 @@ section{
     border-radius: 50%;
     background: transparent;
 }
-
+.para{
+    color: white;
+    text-align: justify;
+    text-indent: 10px;
+    margin-left: -40px;
+}
 
 .main{
     color: white;
