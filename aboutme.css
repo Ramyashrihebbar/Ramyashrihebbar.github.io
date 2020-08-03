@@ -5,8 +5,30 @@ body{
     height: 100vh;
     transition:  all .5s;
     overflow: hidden;
-    font-family: 'Permanent Marker', cursive;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+img {
+    border: 5px solid #03a9f4;
+  }
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  
+    
+}
+.info {
+    border-color: #2196F3;
+    color: black;
+}
+
+.info:hover {
+    background: #2196F3;
+    color: black;
 }
 .rounded{
     left: 0;
@@ -35,7 +57,7 @@ body{
 }
 .text h2{
     position: absolute;
-    
+    font-family: Arial, Helvetica, sans-serif;
     transform: translate(-50%,-50%);
     font-size: 4em;
 }
@@ -65,6 +87,6 @@ body{
     width:100%;
     margin-top: 150px;
     margin-left: -200px;
-    size: 5em;
+    font-size: 1.3em;
    
 }
