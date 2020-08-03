@@ -257,20 +257,20 @@ section{
     left: 50%;
     top: 50%;
     margin: -100px 0 0 -100px;
-    animation: loadAnim 3s ;
+    animation: animation1 3s ;
     animation-iteration-count: infinite;
 
 }
 .animation2{
-    animation: loadAnim2 3s ;
+    animation: animation2 3s ;
     animation-iteration-count: infinite;
 
 }
-@keyframes loadAnim{
+@keyframes animation1{
     0%{transform: rotate3d(1,1,1,0deg);}
     100%{transform: rotate3d(1,1,1,360deg);}
 }
-@keyframes loadAnim2{
+@keyframes animation2{
     0%{transform: rotate3d(1,1,1,0deg);}
-    100%{transform: rotate3d(1,1,1,360deg);}
+    100%{transform: rotate3d(1,1,1,-360deg);}
 }
