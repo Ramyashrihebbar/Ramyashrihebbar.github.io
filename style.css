@@ -2,15 +2,13 @@ body{
     font-family: 'Permanent Marker', cursive;
 font-family: 'Ubuntu Condensed', sans-serif;
 overflow: hidden;
-}
-*{
-    margin: 0;
+margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
-
+   
 }
+
 .sidebar{
     position: fixed;
     left: -250px;
