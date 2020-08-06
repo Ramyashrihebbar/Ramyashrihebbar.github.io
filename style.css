@@ -1,6 +1,7 @@
 body{
     font-family: 'Permanent Marker', cursive;
 font-family: 'Ubuntu Condensed', sans-serif;
+overflow: hidden;
 }
 *{
     margin: 0;
@@ -274,3 +275,7 @@ section{
     0%{transform: rotate3d(1,1,1,0deg);}
     100%{transform: rotate3d(1,1,1,-360deg);}
 }
+.wrapper{
+    width: 100%;
+}
+
