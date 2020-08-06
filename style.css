@@ -1,108 +1,271 @@
-body{
-    font-family: 'Permanent Marker', cursive;
-font-family: 'Ubuntu Condensed', sans-serif;
-overflow: hidden;
-margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-   
+@media only screen and (max-width: 450px){
+    body{
+        font-family: 'Permanent Marker', cursive;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .sidebar{
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+    }
+    .sidebar header{
+        font-size: 22px;
+        text-align:center ;
+        line-height: 70px;
+        user-select:none;
+    }
+    .sidebar ul a{
+        display: block;
+        height:100%;
+        width: 100%;
+        line-height: 65px;
+        font-size: 20px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255,255,255,1);
+        border-bottom: 1px solid black;
+    }
+    ul li  :hover {
+        padding-left: 50px;
+    }
+    .sidebar ul a i{
+        margin-right: 16px;
+    }
+    #check{
+        display:none ;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    label #btn{
+        left:40px;
+        top:25px;
+        font-size: 35px;
+        padding: 6px 12px;
+        transition: all  .5s;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -195px;
+        top:17px;
+        font-size: 30px;
+        padding: 4px,9px;
+        transition: all .5sec;
+    }
+    #check:checked ~ .sidebar{
+        left:0;
+    }
+    #check:checked ~ label #btn{
+        left:250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        left: 195px;
+    }
+    section{
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        transition:  all .5s;
+    }
+    #check:checked ~ section{
+        margin-left: 250px;
+    }
+    .round{
+        top: 100%;
+        left: 60%;
+        transform: translate(45%,30%);
+    }
+    .round img {
+        border-radius: 50%;  
+    }
+    .main{
+        margin-bottom: -50px;
+        margin-left:90px;
+    }
+    .main{
+        font-size: 20px;
+    }
+    .btn {
+        border: 2px solid black;
+        padding: 14px 35px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px  
+    }
+}
+@media only screen and (min-width: 450px) {
+    body{
+        font-family: 'Permanent Marker', cursive;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .sidebar{
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+    }
+    .sidebar header{
+        font-size: 22px;
+        text-align:center ;
+        line-height: 70px;
+        user-select:none;
+    }
+    .sidebar ul a{
+        display: block;
+        height:100%;
+        width: 100%;
+        line-height: 65px;
+        font-size: 20px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255,255,255,1);
+        border-bottom: 1px solid black;
+    }
+    ul li  :hover {
+        padding-left: 50px;
+    }
+    .sidebar ul a i{
+        margin-right: 16px;
+    }
+    #check{
+        display:none ;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    label #btn{
+        left:40px;
+        top:25px;
+        font-size: 35px;
+        padding: 6px 12px;
+        transition: all  .5s;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -195px;
+        top:17px;
+        font-size: 30px;
+        padding: 4px,9px;
+        transition: all .5sec;
+    }
+    #check:checked ~ .sidebar{
+        left:0;
+    }
+    #check:checked ~ label #btn{
+        left:250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        left: 195px;
+    }
+    section{
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        transition:  all .5s;
+    }
+    #check:checked ~ section{
+        margin-left: 250px;
+    }
+    .round{
+        top: 100%;
+        left: 60%;
+        transform: translate(45%,30%);
+    }
+    .round img {
+        border-radius: 50%;  
+    }
+    .main{
+        margin-bottom: -50px;
+        margin-left:90px;
+    }
+    .main{
+        font-size: 20px;
+    }
+    .btn {
+        border: 2px solid black;
+        padding: 14px 35px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px  
+    }
+
 }
 
+
+body{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    overflow: hidden;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
 .sidebar{
     position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
     background: #042331;
     transition: all .5s ease;
-   
 }
 .sidebar header{
-    font-size: 22px;
     color: white;
     text-align:center ;
-    line-height: 70px;
     background: #063146;
     user-select:none;
 }
 .sidebar ul a{
     display: block;
-    height:100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
     color:white;
-    padding-left: 40px;
-    box-sizing: border-box;
     border-top: 1px solid rgba(255,255,255,1);
     border-bottom: 1px solid black;
     transition: .4s;
 }
-
-
 ul li  :hover {
-    padding-left: 50px;
     color:blue;
 }
-.sidebar ul a i{
-    margin-right: 16px;
-}
 #check{
-    display:none ;
-    
+    display:none ;  
 }
 label #btn, label #cancel{
     position: absolute;
     cursor: pointer;
     background: #042331;
     border-radius: 3px;
-
 }
 label #btn{
-    left:40px;
-    top:25px;
-    font-size: 35px;
     color:white;
-    padding: 6px 12px;
     transition: all  .5s;
-
 }
 label #cancel{
-    z-index: 1111;
-    left: -195px;
-    top:17px;
-    font-size: 30px;
     color:#0a5275;
-    padding: 4px,9px;
     transition: all .5sec;
 }
-#check:checked ~ .sidebar{
-    left:0;
-}
 #check:checked ~ label #btn{
-    left:250px;
     opacity: 0;
     pointer-events: none;
-}
-#check:checked ~ label #cancel{
-    left: 195px;
-
 }
 section{
     background: url(https://www.fg-a.com/wallpapers/2020-black-crystalline-peaks-image.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
     transition:  all .5s;
 }
-#check:checked ~ section{
-    margin-left: 250px;
-
-}
 .round{
-    top: 100%;
-    left: 60%;
     transform: translate(45%,30%);
 }
 .round img {
@@ -115,36 +278,19 @@ section{
     margin-bottom: -50px;
     margin-left:90px;
 }
-.main{
-    font-size: 20px;
-}
-
 .btn {
     border: 2px solid black;
     background-color: white;
     color: black;
-    padding: 14px 35px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px
-    
-    
+    cursor: pointer; 
 }
 .info {
     border-color: #2196F3;
     color: dodgerblue
 }
-  
 .info:hover {
     background: #2196F3;
     color:white;
-}
-.leaf{
-    
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
 }
 .leaf div{
     position:absolute ;
@@ -154,7 +300,6 @@ section{
         left:20%; 
         animation:fall 15s linear infinite ;
         animation-delay:-2s;
-    
 }
     .leaf div:nth-child(2){
         left:70%; 
@@ -221,41 +366,22 @@ section{
     }
 .loading{
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom:0;
-    z-index: 1000;
     background: #000;
 }
 .loader{
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
+    
     text-align: center;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -100px 0 0 -100px;
-    font-size: 30px;
     color:#fff;
     perspective: 200px;
 }
 .animation1,
 .animation2{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid;
     border-left-color: #10ac84;
     border-top-color: #ff9f43;
     border-right-color: #0984e3;
     border-bottom-color: #d63031;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -100px 0 0 -100px;
     animation: animation1 3s ;
     animation-iteration-count: infinite;
 
@@ -273,7 +399,6 @@ section{
     0%{transform: rotate3d(1,1,1,0deg);}
     100%{transform: rotate3d(1,1,1,-360deg);}
 }
-.wrapper{
-    width: 100%;
-}
+
+
 
