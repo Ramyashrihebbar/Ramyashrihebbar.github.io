@@ -1,5 +1,5 @@
-@media only screen and (max-width: 450px){
-    body{
+@media only screen and (max-width: 450px) {
+    body {
         font-family: 'Permanent Marker', cursive;
         font-family: 'Ubuntu Condensed', sans-serif;
         overflow: hidden;
@@ -7,103 +7,121 @@
         padding: 0;
         list-style: none;
     }
-    .sidebar{
+    .emoji {
+        width: 170px;
+        height: 170px;
+        margin-left: -30px;
+    }
+    .sidebar {
         position: fixed;
         left: -250px;
-        width: 250px;
+        width: 150px;
         height: 100%;
     }
-    .sidebar header{
-        font-size: 22px;
-        text-align:center ;
-        line-height: 70px;
-        user-select:none;
+    .sidebar header {
+        font-size: 16px;
+        text-align: center;
+        line-height: 55px;
+        user-select: none;
     }
-    .sidebar ul a{
+    .sidebar ul a {
         display: block;
-        height:100%;
+        height: 100%;
         width: 100%;
-        line-height: 65px;
-        font-size: 20px;
-        padding-left: 40px;
+        line-height: 55px;
+        font-size: 15px;
+        padding-left: 0px;
         box-sizing: border-box;
-        border-top: 1px solid rgba(255,255,255,1);
+        border-top: 1px solid rgba(255, 255, 255, 1);
         border-bottom: 1px solid black;
     }
-    ul li  :hover {
+    ul li :hover {
         padding-left: 50px;
     }
-    .sidebar ul a i{
-        margin-right: 16px;
+    .sidebar ul a i {
+        margin-right: 10px;
     }
-    #check{
-        display:none ;
+    #check {
+        display: none;
     }
-    label #btn, label #cancel{
+    label #btn,
+    label #cancel {
         position: absolute;
         cursor: pointer;
         border-radius: 3px;
     }
-    label #btn{
-        left:40px;
-        top:25px;
-        font-size: 35px;
+    label #btn {
+        left: 40px;
+        top: 25px;
+        font-size: 15px;
         padding: 6px 12px;
-        transition: all  .5s;
+        transition: all .5s;
     }
-    label #cancel{
+    label #cancel {
         z-index: 1111;
         left: -195px;
-        top:17px;
-        font-size: 30px;
-        padding: 4px,9px;
+        top: 17px;
+        font-size: 15px;
+        padding: 4px, 9px;
         transition: all .5sec;
     }
-    #check:checked ~ .sidebar{
-        left:0;
+    #check:checked~.sidebar {
+        left: 0;
     }
-    #check:checked ~ label #btn{
-        left:250px;
+    #check:checked~label #btn {
+        left: 250px;
         opacity: 0;
         pointer-events: none;
     }
-    #check:checked ~ label #cancel{
-        left: 195px;
+    #check:checked~label #cancel {
+        left: 125px;
+        top: 10px;
     }
-    section{
+    section {
+        overflow: hidden;
         background-position: center;
         background-size: cover;
-        height: 100vh;
-        transition:  all .5s;
+        height: 1851px;
+        transition: all .5s;
     }
-    #check:checked ~ section{
-        margin-left: 250px;
+    #check:checked~section {
+        margin-left: 45px;
     }
-    .round{
-        top: 100%;
-        left: 60%;
-        transform: translate(45%,30%);
+    .round {
+        transform: translate(49%, 70%);
     }
     .round img {
-        border-radius: 50%;  
+        border-radius: 50%;
     }
-    .main{
+    .main {
         margin-bottom: -50px;
-        margin-left:90px;
-    }
-    .main{
-        font-size: 20px;
+        margin-left: 90px;
+        font-size: 14px;
     }
     .btn {
         border: 2px solid black;
-        padding: 14px 35px;
-        font-size: 16px;
+        padding: 5px 5px;
+        font-size: 12px;
         cursor: pointer;
-        margin-left: 10px  
+        margin-left: -8px
+    }
+    .name {
+        margin-top: 70px;
+        font-size: 22.5px;
+        margin-left: 5px;
+    }
+    .para {
+        margin-top: -40px;
+        font-size: 10px;
+    }
+    #leafSize {
+        width: 25px;
+        height: 25px;
     }
 }
+
 @media only screen and (min-width: 450px) {
-    body{
+    body {
         font-family: 'Permanent Marker', cursive;
         font-family: 'Ubuntu Condensed', sans-serif;
         overflow: hidden;
@@ -111,91 +129,96 @@
         padding: 0;
         list-style: none;
     }
-    .sidebar{
+    .emoji {
+        width: 200px;
+        height: 200px;
+    }
+    .sidebar {
         position: fixed;
         left: -250px;
         width: 250px;
         height: 100%;
     }
-    .sidebar header{
+    .sidebar header {
         font-size: 22px;
-        text-align:center ;
+        text-align: center;
         line-height: 70px;
-        user-select:none;
+        user-select: none;
     }
-    .sidebar ul a{
+    .sidebar ul a {
         display: block;
-        height:100%;
+        height: 100%;
         width: 100%;
         line-height: 65px;
         font-size: 20px;
         padding-left: 40px;
         box-sizing: border-box;
-        border-top: 1px solid rgba(255,255,255,1);
+        border-top: 1px solid rgba(255, 255, 255, 1);
         border-bottom: 1px solid black;
     }
-    ul li  :hover {
+    ul li :hover {
         padding-left: 50px;
     }
-    .sidebar ul a i{
+    .sidebar ul a i {
         margin-right: 16px;
     }
-    #check{
-        display:none ;
+    #check {
+        display: none;
     }
-    label #btn, label #cancel{
+    label #btn,
+    label #cancel {
         position: absolute;
         cursor: pointer;
         border-radius: 3px;
     }
-    label #btn{
-        left:40px;
-        top:25px;
+    label #btn {
+        left: 40px;
+        top: 25px;
         font-size: 35px;
         padding: 6px 12px;
-        transition: all  .5s;
+        transition: all .5s;
     }
-    label #cancel{
+    label #cancel {
         z-index: 1111;
         left: -195px;
-        top:17px;
+        top: 17px;
         font-size: 30px;
-        padding: 4px,9px;
+        padding: 4px, 9px;
         transition: all .5sec;
     }
-    #check:checked ~ .sidebar{
-        left:0;
+    #check:checked~.sidebar {
+        left: 0;
     }
-    #check:checked ~ label #btn{
-        left:250px;
+    #check:checked~label #btn {
+        left: 250px;
         opacity: 0;
         pointer-events: none;
     }
-    #check:checked ~ label #cancel{
+    #check:checked~label #cancel {
         left: 195px;
     }
-    section{
+    section {
         background-position: center;
         background-size: cover;
         height: 100vh;
-        transition:  all .5s;
+        transition: all .5s;
     }
-    #check:checked ~ section{
+    #check:checked~section {
         margin-left: 250px;
     }
-    .round{
+    .round {
         top: 100%;
         left: 60%;
-        transform: translate(45%,30%);
+        transform: translate(45%, 30%);
     }
     .round img {
-        border-radius: 50%;  
+        border-radius: 50%;
     }
-    .main{
+    .main {
         margin-bottom: -50px;
-        margin-left:90px;
+        margin-left: 90px;
     }
-    .main{
+    .main {
         font-size: 20px;
     }
     .btn {
@@ -203,202 +226,277 @@
         padding: 14px 35px;
         font-size: 16px;
         cursor: pointer;
-        margin-left: 10px  
+        margin-left: 10px
     }
-
+    #leafSize {
+        width: 75px;
+        height: 75px;
+    }
 }
 
-
-body{
+body {
     font-family: 'Permanent Marker', cursive;
     font-family: 'Ubuntu Condensed', sans-serif;
     overflow: hidden;
     list-style: none;
     text-decoration: none;
-    background-color: black;
 }
-.sidebar{
+
+.sidebar {
     position: fixed;
     background: #042331;
     transition: all .5s ease;
 }
-.sidebar header{
+
+.sidebar header {
     color: white;
-    text-align:center ;
+    text-align: center;
     background: #063146;
-    user-select:none;
+    user-select: none;
 }
-.sidebar ul a{
+
+.sidebar ul a {
     display: block;
-    color:white;
-    border-top: 1px solid rgba(255,255,255,1);
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 1);
     border-bottom: 1px solid black;
     transition: .4s;
 }
-ul li  :hover {
-    color:blue;
+
+ul li :hover {
+    color: blue;
 }
-#check{
-    display:none ;  
+
+#check {
+    display: none;
 }
-label #btn, label #cancel{
+
+label #btn,
+label #cancel {
     position: absolute;
     cursor: pointer;
     background: #042331;
     border-radius: 3px;
 }
-label #btn{
-    color:white;
-    transition: all  .5s;
+
+label #btn {
+    color: white;
+    transition: all .5s;
 }
-label #cancel{
-    color:#0a5275;
+
+label #cancel {
+    color: #0a5275;
     transition: all .5sec;
 }
-#check:checked ~ label #btn{
+
+#check:checked~label #btn {
     opacity: 0;
     pointer-events: none;
 }
-section{
-    background: url(https://www.fg-a.com/wallpapers/2020-black-crystalline-peaks-image.jpg) no-repeat;
-    background-position: center;
+
+section {
+    background: url('bg.jpg') no-repeat;
     background-size: cover;
-    transition:  all .5s;
+    transition: all .5s;
 }
-.round{
-    transform: translate(45%,30%);
-}
+
 .round img {
     border-radius: 50%;
     background: transparent;
 }
-.main{
+
+.main {
     color: white;
     text-align: center;
-    margin-bottom: -50px;
-    margin-left:90px;
 }
+
 .btn {
     border: 2px solid black;
     background-color: white;
     color: black;
-    cursor: pointer; 
+    cursor: pointer;
 }
+
 .info {
     border-color: #2196F3;
     color: dodgerblue
 }
+
 .info:hover {
     background: #2196F3;
-    color:white;
+    color: white;
 }
-.leaf div{
-    position:absolute ;
-    display:block ;
+
+.leaf div {
+    position: absolute;
+    display: block;
 }
-.leaf div:nth-child(1){
-        left:20%; 
-        animation:fall 15s linear infinite ;
-        animation-delay:-2s;
+
+.leafs div {
+    position: absolute;
+    display: block;
 }
-    .leaf div:nth-child(2){
-        left:70%; 
-        animation:fall 15s linear infinite ;
-        animation-delay:-4s;
+
+.leafTwo div {
+    position: absolute;
+    display: block;
+}
+
+.leaf div:nth-child(1) {
+    left: 20%;
+    animation: fall 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(2) {
+    left: 70%;
+    animation: fall 5s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(3) {
+    left: 10%;
+    animation: fall 3s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(4) {
+    left: 50%;
+    animation: fall 4s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(5) {
+    left: 85%;
+    animation: fall 7s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(6) {
+    left: 15%;
+    animation: fall 10s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(7) {
+    left: 90%;
+    animation: fall 2s linear infinite;
+    animation-delay: -4s;
+}
+
+.leafTwo div:nth-child(1) {
+    left: 5%;
+    animation: fall 4s linear infinite;
+    animation-delay: -4s;
+}
+
+.leafTwo div:nth-child(2) {
+    left: 30%;
+    animation: fall 15s linear infinite;
+    animation-delay: -4s;
+}
+
+.leafTwo div:nth-child(3) {
+    left: 80%;
+    animation: fall 20s linear infinite;
+    animation-delay: -7s;
+}
+
+.leafTwo div:nth-child(4) {
+    left: 20%;
+    animation: fall 18s linear infinite;
+    animation-delay: -5s;
+}
+
+.leafTwo div:nth-child(5) {
+    left: 35%;
+    animation: fall 14s linear infinite;
+    animation-delay: -1s;
+}
+
+.leafTwo div:nth-child(6) {
+    left: 75%;
+    animation: fall 16s linear infinite;
+    animation-delay: -1s;
+}
+
+.leafTwo div:nth-child(7) {
+    left: 30%;
+    animation: fall 15s linear infinite;
+    animation-delay: -2s;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        top: -10%;
+        transform: translateX (20px) rotate(0deg);
     }
-    .leaf div:nth-child(3){
-        left:10%; 
-        animation:fall 20s linear infinite ;
-        animation-delay:-7s;
-        
+    20% {
+        opacity: 0.8;
+        transform: translateX (-20px) rotate(45deg);
     }
-    .leaf div:nth-child(4){
-        left:50%; 
-       animation:fall 18s linear infinite ; 
-       animation-delay:-5s;
+    40% {
+        transform: translateX (-20px) rotate(90deg);
     }
-    .leaf div:nth-child(5){
-        left:85%; 
-        animation:fall 14s linear infinite ;
-        animation-delay:-5s;
+    60% {
+        transform: translateX (-20px) rotate(135deg);
     }
-    .leaf div:nth-child(6){
-        left:15%; 
-        animation:fall 16s linear infinite ;
-        animation-delay:-10s;
+    80% {
+        transform: translateX (-20px) rotate(180deg);
     }
-    .leaf div:nth-child(7){
-        left:90%; 
-        animation:fall 15s linear infinite ;
-        animation-delay:-4s;
+    100% {
+        top: 110%;
+        transform: translateX (-20px) rotate(225deg);
     }
-    
-    @keyframes fall{
-        0%{
-            opacity:1;
-            top:-10%;
-            transform:translateX (20px) rotate(0deg);
-        }
-        20%{
-            opacity:0.8;
-            transform:translateX (-20px) rotate(45deg);
-        }
-        40%{
-    
-            transform:translateX (-20px) rotate(90deg);
-        }
-        60%{
-            
-           transform:translateX (-20px) rotate(135deg); 
-        }
-        80%{
-        
-            transform:translateX (-20px) rotate(180deg);
-        }
-        100%{
-            
-            top:110%;
-            transform:translateX (-20px) rotate(225deg);
-        }
-        }
-    .leaf1{
-        transform: rotateX(180deg);
-    }
-.loading{
+}
+
+.leafs {
+    transform: rotateX(180deg);
+}
+
+.loading {
     position: absolute;
     background: #000;
 }
-.loader{
-    
+
+.loader {
     text-align: center;
     position: absolute;
-    color:#fff;
+    color: #fff;
     perspective: 200px;
 }
+
 .animation1,
-.animation2{
+.animation2 {
     border-left-color: #10ac84;
     border-top-color: #ff9f43;
     border-right-color: #0984e3;
     border-bottom-color: #d63031;
     position: absolute;
-    animation: animation1 3s ;
+    animation: animation1 3s;
     animation-iteration-count: infinite;
-
 }
-.animation2{
-    animation: animation2 3s ;
+
+.animation2 {
+    animation: animation2 3s;
     animation-iteration-count: infinite;
-
-}
-@keyframes animation1{
-    0%{transform: rotate3d(1,1,1,0deg);}
-    100%{transform: rotate3d(1,1,1,360deg);}
-}
-@keyframes animation2{
-    0%{transform: rotate3d(1,1,1,0deg);}
-    100%{transform: rotate3d(1,1,1,-360deg);}
 }
 
+@keyframes animation1 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
 
-
+@keyframes animation2 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, -360deg);
+    }
+}
