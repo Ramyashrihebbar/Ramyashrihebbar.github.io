@@ -55,7 +55,7 @@ img {
     font-size: 1.3em;
 }
 }
-@media only screen and (max-width: 450px){
+@media only screen and (max-width:450px){
     body{
         background-position: center;
         background-size: cover;
@@ -77,7 +77,7 @@ img {
         left: 0;
         height: 50vh;
         width:25%;
-        margin-top: 75px;
+        margin-top: 50px;
         margin-left: 50px;
     }
     .rounded img{
@@ -101,17 +101,20 @@ img {
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
         transform: translate(-50%,-50%);
-        font-size: 3em;
+        font-size: 1.5em;
     }
     .para{
         right: 0;
-        height: 100vh;
+        height: 500vh;
         width:100%;
-        margin-top: 80px;
-        margin-left: -100px;
-        font-size: 1.3em;
+        margin-left: -50px;
+        bottom: 30px;
+        font-size: 1em;
+        text-align: justify;
+
+        
     }
-    }
+}
 body{
     background: black;
     background-position: center;
