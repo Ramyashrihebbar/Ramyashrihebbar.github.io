@@ -91,6 +91,13 @@ body,html{
     .box6{
         width: 50%;
     }
+    #header{
+        height: 120px;
+        color: white;
+        margin-left: 175px;
+        margin-top: 50px;
+        font-size: 13px;
+    }
     
 }
 
