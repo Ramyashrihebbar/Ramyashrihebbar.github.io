@@ -8,7 +8,16 @@
     <title>About </title>
 </head>
 <body>
-    
+    <div class="loading" id="loader">
+        <span class="loader">Loading...</span>
+        <span class="animation1"></span>
+        <span class="animation2"></span>
+    </div>
+    <script>
+        $(window).on("load", function() {
+            $(".loading").fadeOut(500);
+        });
+    </script>
     <div class="container">
     <div class="rounded"> 
         <img src="ramya.jpg" alt="">
