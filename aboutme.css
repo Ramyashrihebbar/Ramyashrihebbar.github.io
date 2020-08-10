@@ -1,4 +1,4 @@
-@media only screen and (max-width: 450px){
+@media only screen and (min-width: 450px){
 body{
     background-position: center;
     background-size: cover;
@@ -8,10 +8,7 @@ body{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
-    
+    border: 5px solid #03a9f4;
   }
 .btn {
     border: 2px solid black;
@@ -19,37 +16,29 @@ img {
     font-size: 16px;
     cursor: pointer;
 }
-.info {
-    border-color: #2196F3;
-}
-.info:hover {
-    background: #2196F3;
-}
 .rounded{
-    left: 30%;
+    left: 0;
     height: 100vh;
     width:50%;
     margin-top: 150px;
     margin-left: 100px;
-    top: 30%;
-
 }
 .rounded img{
-    width: 100px;
-    height: 100px;  
     border-radius: 25px;
-   
+    width: 300px;
+    height: 300px;
 }
 .text{
     height: 100vh;
     width:50%;
     float: left;
-    top: 30%;
-    left:60%;
 } 
 .container
 {
   display: flex;
+}
+.text{
+    position: relative;
 }
 .text h2{
     position: absolute;
@@ -64,8 +53,65 @@ img {
     margin-top: 150px;
     margin-left: -200px;
     font-size: 1.3em;
-    }
 }
+}
+@media only screen and (max-width: 450px){
+    body{
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        transition:  all .5s;
+        overflow: hidden;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    img {
+        border: 3px solid #03a9f4;
+      }
+    .btn {
+        border: 2px solid black;
+        padding: 7px 17px;
+        font-size: 5px;
+        cursor: pointer;
+    }
+    .rounded{
+        left: 0;
+        height: 50vh;
+        width:25%;
+        margin-top: 75px;
+        margin-left: 50px;
+    }
+    .rounded img{
+        border-radius: 25px;
+        width: 150px;
+        height: 150px;
+    }
+    .text{
+        height: 100vh;
+        width:50%;
+        float: left;
+    } 
+    .container
+    {
+      display: flex;
+    }
+    .text{
+        position: relative;
+    }
+    .text h2{
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        transform: translate(-50%,-50%);
+        font-size: 3em;
+    }
+    .para{
+        right: 0;
+        height: 100vh;
+        width:100%;
+        margin-top: 80px;
+        margin-left: -100px;
+        font-size: 1.3em;
+    }
+    }
 body{
     background: black;
     background-position: center;
@@ -75,10 +121,6 @@ body{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 img {
-    width: 300px;
-    height: 300px;
-    margin-top: 100px;
-    margin-left: 20px;
     border: 5px solid #03a9f4;
   }
 .btn {
@@ -89,6 +131,7 @@ img {
 }
 .info {
     border-color: #2196F3;
+    color: black;
 }
 .info:hover {
     background: #2196F3;
@@ -100,13 +143,11 @@ img {
 }
 .text{
     position: relative;
-    color: white;
 }
 .text h2{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
     transform: translate(-50%,-50%);
-    font-size: 4em;
 }
 .text h2:nth-child(1)
 {
@@ -129,10 +170,4 @@ img {
 }
 .para{
     color: white;
-    right: 0;
-    height: 100vh;
-    width:100%;
-    margin-top: 150px;
-    margin-left: -100px;
-    font-size: 1.3em;
 }
