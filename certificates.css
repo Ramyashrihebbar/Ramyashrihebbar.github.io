@@ -7,6 +7,8 @@ body,html{
     background-color: black;
     overflow: hidden;
 }
+
+
 .container{
     width: 100%;
     max-width: 1100px;
@@ -14,12 +16,17 @@ body,html{
     margin-right: auto;
   
 }
+.logo {
+    width: 30px;
+    height: 30px;
+}
 #header{
     height: 120px;
     color: white;
     margin-left: 500px;
     margin-top: 40px;
 }
+
 #header h2{
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,9 +53,11 @@ body,html{
     }
 }
 .box{
-    width: 50%;
-    height:140px;
+    width: 100%;
+    height:150px;
     float: left;
+    left:150px; 
+    position: relative;
 }
 .btn {
     border: 2px solid black;
@@ -57,7 +66,6 @@ body,html{
     padding: 14px 35px;
     font-size: 16px;
     cursor: pointer;
-    margin: 30px 50px 0px 30px;
    
 }
 .info {
@@ -73,12 +81,13 @@ body,html{
 .clearfix{
     clear: both;
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 520px){
     .box1{
         width: 50%;
     }
     .box2{
         width: 50%;
+        position: relative;
     }
     .box3{
         width:50%;
@@ -99,6 +108,166 @@ body,html{
         margin-top: 50px;
         font-size: 13px;
     }
+    #leafSize {
+        width: 25px;
+        height: 25px;
+    }
     
 }
+@media screen and (min-width: 320px){
+    .box1{
+        width: 50%;
+       
+    }
+    .box2{
+        width: 50%;
+        margin-right: -40px;
+    }
+    .box3{
+        width:50%;
+    }
+    .box4{
+        width: 50%;
+    }
+    .box5{
+        width:50%;
+    }
+    .box6{
+        width: 50%;
+    }
+    #leafSize {
+        width: 75px;
+        height: 75px;
+    }
+    
+    
+}
+.leaf div {
+    position: absolute;
+    display: block;
+}
+
+.leafs div {
+    position: absolute;
+    display: block;
+}
+
+.leafTwo div {
+    position: absolute;
+    display: block;
+}
+
+.leaf div:nth-child(1) {
+    left: 20%;
+    animation: fall 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(2) {
+    left: 70%;
+    animation: fall 5s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(3) {
+    left: 10%;
+    animation: fall 3s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(4) {
+    left: 50%;
+    animation: fall 4s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(5) {
+    left: 85%;
+    animation: fall 7s linear infinite;
+    animation-delay: -2s;
+}
+
+.leaf div:nth-child(6) {
+    left: 15%;
+    animation: fall 10s linear infinite;
+    animation-delay: -4s;
+}
+
+.leaf div:nth-child(7) {
+    left: 90%;
+    animation: fall 2s linear infinite;
+    animation-delay: -4s;
+}
+
+.leafTwo div:nth-child(1) {
+    left: 5%;
+    animation: fall 4s linear infinite;
+    animation-delay: -4s;
+}
+
+.leafTwo div:nth-child(2) {
+    left: 30%;
+    animation: fall 15s linear infinite;
+    animation-delay: -4s;
+}
+
+.leafTwo div:nth-child(3) {
+    left: 80%;
+    animation: fall 20s linear infinite;
+    animation-delay: -7s;
+}
+
+.leafTwo div:nth-child(4) {
+    left: 20%;
+    animation: fall 18s linear infinite;
+    animation-delay: -5s;
+}
+
+.leafTwo div:nth-child(5) {
+    left: 35%;
+    animation: fall 14s linear infinite;
+    animation-delay: -1s;
+}
+
+.leafTwo div:nth-child(6) {
+    left: 75%;
+    animation: fall 16s linear infinite;
+    animation-delay: -1s;
+}
+
+.leafTwo div:nth-child(7) {
+    left: 30%;
+    animation: fall 15s linear infinite;
+    animation-delay: -2s;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        top: -10%;
+        transform: translateX (20px) rotate(0deg);
+    }
+    20% {
+        opacity: 0.8;
+        transform: translateX (-20px) rotate(45deg);
+    }
+    40% {
+        transform: translateX (-20px) rotate(90deg);
+    }
+    60% {
+        transform: translateX (-20px) rotate(135deg);
+    }
+    80% {
+        transform: translateX (-20px) rotate(180deg);
+    }
+    100% {
+        top: 110%;
+        transform: translateX (-20px) rotate(225deg);
+    }
+}
+
+.leafs {
+    transform: rotateX(180deg);
+}
+
 
