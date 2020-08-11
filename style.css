@@ -140,9 +140,9 @@
         height: 100%;
     }
     .sidebar header {
-        font-size: 22px;
+        font-size: 32px;
         text-align: center;
-        line-height: 70px;
+        line-height: 130px;
         user-select: none;
     }
     .sidebar ul a {
@@ -160,7 +160,7 @@
         padding-left: 50px;
     }
     .sidebar ul a i {
-        margin-right: 16px;
+        margin-right: 20px;
     }
     #check {
         display: none;
@@ -508,4 +508,7 @@ section {
 @keyframes animation2{
     0%{transform: rotate3d(1,1,1,0deg);}
     100%{transform: rotate3d(1,1,1,-360deg);}
+}
+.copy{
+    color: white;
 }
