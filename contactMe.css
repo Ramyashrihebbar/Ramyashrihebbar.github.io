@@ -120,7 +120,7 @@ footer {
     iframe{
     position: relative;
     margin-top:22rem;
-    width: 20rem;
+    width: 25rem;
   }
   .btn{
     display: inline-block;
@@ -142,7 +142,7 @@ footer {
   }
   .text{
     position: relative;
-    margin-left: 20rem;
+    margin-left: 22rem;
     transform: translate(-50%);
     width: 100%;
     text-align: center;
