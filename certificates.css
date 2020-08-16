@@ -148,8 +148,8 @@
         position: absolute;
         display: block;
         list-style: none;
-        width: 15px;
-        height: 15px;
+        width: 5px;
+        height: 5px;
         animation: animate 25s linear infinite;
         bottom: -100px;
         
