@@ -36,7 +36,7 @@
         border-bottom: 1px solid black;
     }
     ul li :hover {
-        padding-left: 50px;
+        padding-left: 25px;
     }
     .sidebar ul a i {
         margin-right: 10px;
