@@ -11,7 +11,7 @@ body{
     align-items: center;
     background: #222;
     min-height:100vh;
-    overflow: hidden;
+
 }
 .container{
     position: relative;
@@ -105,12 +105,13 @@ body{
    color:#fff;
 
 }
-@media (max-width:992px)
+@media (max-width: 992px)
 {
     .container{
-        width: 100px;
+        width: 100%;
         flex-direction:column;
-        align-items: center;
+        text-align: center;
+        
     }
 
     .container .card{
@@ -143,4 +144,5 @@ body{
         width:100%;
 
     }
+    
 }
